@@ -72,17 +72,7 @@ NSString *const FBSessionStateChangedNotification = @"com.FacebookVideoUpload.Lo
                                                             state:state
                                                             error:error];
                                                         }];
-    /*
-    return [FBSession openActiveSessionWithReadPermissions:nil
-                                              allowLoginUI:allowLoginUI
-                                         completionHandler:^(FBSession *session,
-                                                             FBSessionState state,
-                                                             NSError *error) {
-                                             [self sessionStateChanged:session
-                                                                 state:state
-                                                                 error:error];
-                                         }];
-     */
+
 }
 
 /*
@@ -142,10 +132,6 @@ NSString *const FBSessionStateChangedNotification = @"com.FacebookVideoUpload.Lo
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     
     [FBSession.activeSession close];
-}
-
-- (BOOL)application:(UIApplication *)application handleOpenURL:(NSURL *)url {
-    //return [[_viewController facebook] handleOpenURL:url];
 }
 
 @end

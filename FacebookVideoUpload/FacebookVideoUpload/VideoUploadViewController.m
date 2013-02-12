@@ -39,6 +39,38 @@
     // The user has initiated a login, so call the openSession method
     // and show the login UX if necessary.
     [appDelegate openSessionWithAllowLoginUI:YES];
+    
+    //Post video
+    /*
+    NSFileManager *fileManager = [[NSFileManager alloc] init];
+    NSString *videoDirectory = [[[fileManager  URLsForDirectory:NSMoviesDirectory inDomains:NSUserDomainMask] objectAtIndex:0] path];
+    NSArray *videoFiles = [fileManager contentsOfDirectoryAtPath:videoDirectory error:nil];
+    NSLog(@"Videos: %@", videoFiles);
+     */
+    
+    //replace with video data in iGotYa
+    NSString *filePath = [[NSBundle mainBundle] pathForResource:@"sample" ofType:@"mov"]; 
+    NSData *videoData = [NSData dataWithContentsOfFile:filePath];
+    NSMutableDictionary *params = [NSMutableDictionary dictionaryWithObjectsAndKeys:
+                               videoData, @"video.mov",
+                               @"video/quicktime", @"contentType",
+                               @"Video Test Title", @"title",
+                               @"Video Test Description", @"description",
+                               nil];
+
+    FBRequest *uploadRequest = [FBRequest requestWithGraphPath:@"me/videos"
+                                                parameters:params
+                                                HTTPMethod:@"POST"];
+    [uploadRequest startWithCompletionHandler:^(FBRequestConnection *connection, id result, NSError *error){
+        if(!error){
+            NSLog(@"Done: %@", result);
+        }
+        else{
+            NSLog(@"Error: %@", error.localizedDescription);
+        }
+    }];
+    
+    
 }
 
 
