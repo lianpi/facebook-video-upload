@@ -1,0 +1,306 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BE38761116CA98A900C67553 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE38761016CA98A900C67553 /* UIKit.framework */; };
+		BE38761316CA98A900C67553 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE38761216CA98A900C67553 /* Foundation.framework */; };
+		BE38761516CA98A900C67553 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE38761416CA98A900C67553 /* CoreGraphics.framework */; };
+		BE38761B16CA98A900C67553 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = BE38761916CA98A900C67553 /* InfoPlist.strings */; };
+		BE38761D16CA98A900C67553 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BE38761C16CA98A900C67553 /* main.m */; };
+		BE38762116CA98A900C67553 /* VideoUploadAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BE38762016CA98A900C67553 /* VideoUploadAppDelegate.m */; };
+		BE38762316CA98A900C67553 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = BE38762216CA98A900C67553 /* Default.png */; };
+		BE38762516CA98A900C67553 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BE38762416CA98A900C67553 /* Default@2x.png */; };
+		BE38762716CA98A900C67553 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BE38762616CA98A900C67553 /* Default-568h@2x.png */; };
+		BE38762A16CA98A900C67553 /* VideoUploadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BE38762916CA98A900C67553 /* VideoUploadViewController.m */; };
+		BE38762D16CA98A900C67553 /* VideoUploadViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BE38762B16CA98A900C67553 /* VideoUploadViewController.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		BE38760D16CA98A900C67553 /* FacebookVideoUpload.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FacebookVideoUpload.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BE38761016CA98A900C67553 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		BE38761216CA98A900C67553 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		BE38761416CA98A900C67553 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		BE38761816CA98A900C67553 /* FacebookVideoUpload-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "FacebookVideoUpload-Info.plist"; sourceTree = "<group>"; };
+		BE38761A16CA98A900C67553 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		BE38761C16CA98A900C67553 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		BE38761E16CA98A900C67553 /* FacebookVideoUpload-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FacebookVideoUpload-Prefix.pch"; sourceTree = "<group>"; };
+		BE38761F16CA98A900C67553 /* VideoUploadAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VideoUploadAppDelegate.h; sourceTree = "<group>"; };
+		BE38762016CA98A900C67553 /* VideoUploadAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VideoUploadAppDelegate.m; sourceTree = "<group>"; };
+		BE38762216CA98A900C67553 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		BE38762416CA98A900C67553 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		BE38762616CA98A900C67553 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		BE38762816CA98A900C67553 /* VideoUploadViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VideoUploadViewController.h; sourceTree = "<group>"; };
+		BE38762916CA98A900C67553 /* VideoUploadViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VideoUploadViewController.m; sourceTree = "<group>"; };
+		BE38762C16CA98A900C67553 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/VideoUploadViewController.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BE38760A16CA98A900C67553 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BE38761116CA98A900C67553 /* UIKit.framework in Frameworks */,
+				BE38761316CA98A900C67553 /* Foundation.framework in Frameworks */,
+				BE38761516CA98A900C67553 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BE38760416CA98A900C67553 = {
+			isa = PBXGroup;
+			children = (
+				BE38761616CA98A900C67553 /* FacebookVideoUpload */,
+				BE38760F16CA98A900C67553 /* Frameworks */,
+				BE38760E16CA98A900C67553 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		BE38760E16CA98A900C67553 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BE38760D16CA98A900C67553 /* FacebookVideoUpload.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BE38760F16CA98A900C67553 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BE38761016CA98A900C67553 /* UIKit.framework */,
+				BE38761216CA98A900C67553 /* Foundation.framework */,
+				BE38761416CA98A900C67553 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BE38761616CA98A900C67553 /* FacebookVideoUpload */ = {
+			isa = PBXGroup;
+			children = (
+				BE38761F16CA98A900C67553 /* VideoUploadAppDelegate.h */,
+				BE38762016CA98A900C67553 /* VideoUploadAppDelegate.m */,
+				BE38762816CA98A900C67553 /* VideoUploadViewController.h */,
+				BE38762916CA98A900C67553 /* VideoUploadViewController.m */,
+				BE38762B16CA98A900C67553 /* VideoUploadViewController.xib */,
+				BE38761716CA98A900C67553 /* Supporting Files */,
+			);
+			path = FacebookVideoUpload;
+			sourceTree = "<group>";
+		};
+		BE38761716CA98A900C67553 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				BE38761816CA98A900C67553 /* FacebookVideoUpload-Info.plist */,
+				BE38761916CA98A900C67553 /* InfoPlist.strings */,
+				BE38761C16CA98A900C67553 /* main.m */,
+				BE38761E16CA98A900C67553 /* FacebookVideoUpload-Prefix.pch */,
+				BE38762216CA98A900C67553 /* Default.png */,
+				BE38762416CA98A900C67553 /* Default@2x.png */,
+				BE38762616CA98A900C67553 /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BE38760C16CA98A900C67553 /* FacebookVideoUpload */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BE38763016CA98A900C67553 /* Build configuration list for PBXNativeTarget "FacebookVideoUpload" */;
+			buildPhases = (
+				BE38760916CA98A900C67553 /* Sources */,
+				BE38760A16CA98A900C67553 /* Frameworks */,
+				BE38760B16CA98A900C67553 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FacebookVideoUpload;
+			productName = FacebookVideoUpload;
+			productReference = BE38760D16CA98A900C67553 /* FacebookVideoUpload.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BE38760516CA98A900C67553 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = VideoUpload;
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = Will;
+			};
+			buildConfigurationList = BE38760816CA98A900C67553 /* Build configuration list for PBXProject "FacebookVideoUpload" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = BE38760416CA98A900C67553;
+			productRefGroup = BE38760E16CA98A900C67553 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BE38760C16CA98A900C67553 /* FacebookVideoUpload */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BE38760B16CA98A900C67553 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BE38761B16CA98A900C67553 /* InfoPlist.strings in Resources */,
+				BE38762316CA98A900C67553 /* Default.png in Resources */,
+				BE38762516CA98A900C67553 /* Default@2x.png in Resources */,
+				BE38762716CA98A900C67553 /* Default-568h@2x.png in Resources */,
+				BE38762D16CA98A900C67553 /* VideoUploadViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BE38760916CA98A900C67553 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BE38761D16CA98A900C67553 /* main.m in Sources */,
+				BE38762116CA98A900C67553 /* VideoUploadAppDelegate.m in Sources */,
+				BE38762A16CA98A900C67553 /* VideoUploadViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		BE38761916CA98A900C67553 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BE38761A16CA98A900C67553 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		BE38762B16CA98A900C67553 /* VideoUploadViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BE38762C16CA98A900C67553 /* en */,
+			);
+			name = VideoUploadViewController.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BE38762E16CA98A900C67553 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		BE38762F16CA98A900C67553 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BE38763116CA98A900C67553 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "FacebookVideoUpload/FacebookVideoUpload-Prefix.pch";
+				INFOPLIST_FILE = "FacebookVideoUpload/FacebookVideoUpload-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		BE38763216CA98A900C67553 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "FacebookVideoUpload/FacebookVideoUpload-Prefix.pch";
+				INFOPLIST_FILE = "FacebookVideoUpload/FacebookVideoUpload-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BE38760816CA98A900C67553 /* Build configuration list for PBXProject "FacebookVideoUpload" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BE38762E16CA98A900C67553 /* Debug */,
+				BE38762F16CA98A900C67553 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BE38763016CA98A900C67553 /* Build configuration list for PBXNativeTarget "FacebookVideoUpload" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BE38763116CA98A900C67553 /* Debug */,
+				BE38763216CA98A900C67553 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BE38760516CA98A900C67553 /* Project object */;
+}
