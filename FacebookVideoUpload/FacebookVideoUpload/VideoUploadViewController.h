@@ -12,5 +12,6 @@
 @interface VideoUploadViewController : UIViewController 
 
 - (IBAction)buttonClicked:(id)sender;
+- (IBAction)logoutPressed:(id)sender;
 
 @end

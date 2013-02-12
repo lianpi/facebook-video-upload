@@ -15,15 +15,12 @@
 
 @implementation VideoUploadViewController
 
-//@synthesize facebook = _facebook;
-//@synthesize facebook;
 @synthesize navController = _navController;
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
-    //facebook = [[Facebook alloc] initWithAppId:@"537815409585422" andDelegate:self];
 }
 
 - (void)didReceiveMemoryWarning
@@ -71,6 +68,15 @@
     }];
     
     
+}
+
+- (IBAction)logoutPressed:(id)sender {
+    VideoUploadAppDelegate *appDelegate = [[UIApplication sharedApplication] delegate];
+    
+    if (FBSession.activeSession.isOpen) {
+        [appDelegate closeSession];
+        NSLog(@"User logged out");
+    }
 }
 
 

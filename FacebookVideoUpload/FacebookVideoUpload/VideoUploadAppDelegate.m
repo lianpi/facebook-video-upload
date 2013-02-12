@@ -87,6 +87,10 @@ NSString *const FBSessionStateChangedNotification = @"com.FacebookVideoUpload.Lo
     return [FBSession.activeSession handleOpenURL:url];
 }
 
+- (void) closeSession {
+    [FBSession.activeSession closeAndClearTokenInformation];
+}
+
 #pragma xcode generated stuff
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
