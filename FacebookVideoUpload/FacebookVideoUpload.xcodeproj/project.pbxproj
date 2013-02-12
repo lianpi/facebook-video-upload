@@ -18,6 +18,12 @@
 		BE38762716CA98A900C67553 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BE38762616CA98A900C67553 /* Default-568h@2x.png */; };
 		BE38762A16CA98A900C67553 /* VideoUploadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BE38762916CA98A900C67553 /* VideoUploadViewController.m */; };
 		BE38762D16CA98A900C67553 /* VideoUploadViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BE38762B16CA98A900C67553 /* VideoUploadViewController.xib */; };
+		BE3879DC16CA9C0300C67553 /* sample.mov in Resources */ = {isa = PBXBuildFile; fileRef = BE3879DB16CA9C0300C67553 /* sample.mov */; };
+		BE387AA316CAA64E00C67553 /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE387AA216CAA64E00C67553 /* FacebookSDK.framework */; };
+		BE387AA516CAA72B00C67553 /* FacebookSDKResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = BE387AA416CAA72B00C67553 /* FacebookSDKResources.bundle */; };
+		BE387AA916CAA76A00C67553 /* Accounts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE387AA616CAA76A00C67553 /* Accounts.framework */; };
+		BE387AAA16CAA76A00C67553 /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE387AA716CAA76A00C67553 /* AdSupport.framework */; };
+		BE387AAB16CAA76A00C67553 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE387AA816CAA76A00C67553 /* Social.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +43,12 @@
 		BE38762816CA98A900C67553 /* VideoUploadViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VideoUploadViewController.h; sourceTree = "<group>"; };
 		BE38762916CA98A900C67553 /* VideoUploadViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VideoUploadViewController.m; sourceTree = "<group>"; };
 		BE38762C16CA98A900C67553 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/VideoUploadViewController.xib; sourceTree = "<group>"; };
+		BE3879DB16CA9C0300C67553 /* sample.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = sample.mov; sourceTree = "<group>"; };
+		BE387AA216CAA64E00C67553 /* FacebookSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FacebookSDK.framework; sourceTree = "<group>"; };
+		BE387AA416CAA72B00C67553 /* FacebookSDKResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = FacebookSDKResources.bundle; sourceTree = "<group>"; };
+		BE387AA616CAA76A00C67553 /* Accounts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accounts.framework; path = System/Library/Frameworks/Accounts.framework; sourceTree = SDKROOT; };
+		BE387AA716CAA76A00C67553 /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
+		BE387AA816CAA76A00C67553 /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -44,9 +56,13 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BE387AA916CAA76A00C67553 /* Accounts.framework in Frameworks */,
+				BE387AAA16CAA76A00C67553 /* AdSupport.framework in Frameworks */,
+				BE387AAB16CAA76A00C67553 /* Social.framework in Frameworks */,
 				BE38761116CA98A900C67553 /* UIKit.framework in Frameworks */,
 				BE38761316CA98A900C67553 /* Foundation.framework in Frameworks */,
 				BE38761516CA98A900C67553 /* CoreGraphics.framework in Frameworks */,
+				BE387AA316CAA64E00C67553 /* FacebookSDK.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -73,6 +89,11 @@
 		BE38760F16CA98A900C67553 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				BE387AA616CAA76A00C67553 /* Accounts.framework */,
+				BE387AA716CAA76A00C67553 /* AdSupport.framework */,
+				BE387AA816CAA76A00C67553 /* Social.framework */,
+				BE387AA416CAA72B00C67553 /* FacebookSDKResources.bundle */,
+				BE387AA216CAA64E00C67553 /* FacebookSDK.framework */,
 				BE38761016CA98A900C67553 /* UIKit.framework */,
 				BE38761216CA98A900C67553 /* Foundation.framework */,
 				BE38761416CA98A900C67553 /* CoreGraphics.framework */,
@@ -96,6 +117,7 @@
 		BE38761716CA98A900C67553 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				BE3879DB16CA9C0300C67553 /* sample.mov */,
 				BE38761816CA98A900C67553 /* FacebookVideoUpload-Info.plist */,
 				BE38761916CA98A900C67553 /* InfoPlist.strings */,
 				BE38761C16CA98A900C67553 /* main.m */,
@@ -143,6 +165,7 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				he,
 			);
 			mainGroup = BE38760416CA98A900C67553;
 			productRefGroup = BE38760E16CA98A900C67553 /* Products */;
@@ -164,6 +187,8 @@
 				BE38762516CA98A900C67553 /* Default@2x.png in Resources */,
 				BE38762716CA98A900C67553 /* Default-568h@2x.png in Resources */,
 				BE38762D16CA98A900C67553 /* VideoUploadViewController.xib in Resources */,
+				BE3879DC16CA9C0300C67553 /* sample.mov in Resources */,
+				BE387AA516CAA72B00C67553 /* FacebookSDKResources.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -229,6 +254,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = "-lsqlite3.0";
 				SDKROOT = iphoneos;
 			};
 			name = Debug;
@@ -253,6 +279,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				OTHER_LDFLAGS = "-lsqlite3.0";
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
@@ -261,6 +288,10 @@
 		BE38763116CA98A900C67553 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "FacebookVideoUpload/FacebookVideoUpload-Prefix.pch";
 				INFOPLIST_FILE = "FacebookVideoUpload/FacebookVideoUpload-Info.plist";
@@ -272,6 +303,10 @@
 		BE38763216CA98A900C67553 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "FacebookVideoUpload/FacebookVideoUpload-Prefix.pch";
 				INFOPLIST_FILE = "FacebookVideoUpload/FacebookVideoUpload-Info.plist";

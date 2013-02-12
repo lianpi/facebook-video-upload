@@ -7,9 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <FacebookSDK/FacebookSDK.h>
 
-@interface VideoUploadViewController : UIViewController
+@interface VideoUploadViewController : UIViewController 
 
-//TESTING GITHUB
+- (IBAction)buttonClicked:(id)sender;
 
 @end

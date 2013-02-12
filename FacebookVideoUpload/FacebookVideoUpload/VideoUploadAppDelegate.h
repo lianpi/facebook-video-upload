@@ -16,4 +16,8 @@
 
 @property (strong, nonatomic) VideoUploadViewController *viewController;
 
+extern NSString *const FBSessionStateChangedNotification;
+
+- (BOOL)openSessionWithAllowLoginUI:(BOOL)allowLoginUI;
+
 @end
