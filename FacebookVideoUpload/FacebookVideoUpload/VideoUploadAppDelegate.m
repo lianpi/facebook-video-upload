@@ -59,11 +59,14 @@ NSString *const FBSessionStateChangedNotification = @"com.FacebookVideoUpload.Lo
 {
     NSArray *permissions = [[NSArray alloc] initWithObjects:
                             @"publish_actions",
+                            @"publish_stream",
                             nil];
 
     
     return[FBSession openActiveSessionWithPublishPermissions:permissions
+                                    //select Audience, used while testing
                                     defaultAudience: FBSessionDefaultAudienceFriends
+                                    //defaultAudience: FBSessionDefaultAudienceOnlyMe
                                     allowLoginUI:allowLoginUI
                                      completionHandler:^(FBSession *session,
                                                          FBSessionState state,
@@ -89,6 +92,7 @@ NSString *const FBSessionStateChangedNotification = @"com.FacebookVideoUpload.Lo
 
 - (void) closeSession {
     [FBSession.activeSession closeAndClearTokenInformation];
+    NSLog(@"User logged out");
 }
 
 #pragma xcode generated stuff

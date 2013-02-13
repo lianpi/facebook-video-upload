@@ -17,16 +17,28 @@
 
 @synthesize navController = _navController;
 
+- (void)sessionStateChanged:(NSNotification*)notification {
+    NSLog(@"Session state changed");
+}
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+    
+    [[NSNotificationCenter defaultCenter]
+     addObserver:self
+     selector:@selector(sessionStateChanged:)
+     name:FBSessionStateChangedNotification
+     object:nil];
 }
 
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+    
+    [[NSNotificationCenter defaultCenter] removeObserver:self];
 }
 
 
@@ -51,8 +63,9 @@
     NSMutableDictionary *params = [NSMutableDictionary dictionaryWithObjectsAndKeys:
                                videoData, @"video.mov",
                                @"video/quicktime", @"contentType",
-                               @"Video Test Title", @"title",
-                               @"Video Test Description", @"description",
+                               @"1 Test Title", @"title",
+                               @"1 Test Description", @"description",
+                                  // @"Will Kalish", @"tags",
                                nil];
 
     FBRequest *uploadRequest = [FBRequest requestWithGraphPath:@"me/videos"
@@ -75,7 +88,6 @@
     
     if (FBSession.activeSession.isOpen) {
         [appDelegate closeSession];
-        NSLog(@"User logged out");
     }
 }
 
