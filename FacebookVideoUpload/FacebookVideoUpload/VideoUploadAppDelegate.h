@@ -22,3 +22,5 @@ extern NSString *const FBSessionStateChangedNotification;
 - (void) closeSession;
 
 @end
+
+//changed
