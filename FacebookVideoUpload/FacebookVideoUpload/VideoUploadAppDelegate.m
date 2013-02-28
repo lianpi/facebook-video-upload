@@ -60,13 +60,15 @@ NSString *const FBSessionStateChangedNotification = @"com.FacebookVideoUpload.Lo
     NSArray *permissions = [[NSArray alloc] initWithObjects:
                             @"publish_actions",
                             @"publish_stream",
+                            @"user_videos",
                             nil];
-
+    
+    
     
     return[FBSession openActiveSessionWithPublishPermissions:permissions
                                     //select Audience, used while testing
-                                    defaultAudience: FBSessionDefaultAudienceFriends
-                                    //defaultAudience: FBSessionDefaultAudienceOnlyMe
+                                    //defaultAudience: FBSessionDefaultAudienceFriends
+                                    defaultAudience: FBSessionDefaultAudienceOnlyMe
                                     allowLoginUI:allowLoginUI
                                      completionHandler:^(FBSession *session,
                                                          FBSessionState state,
@@ -76,6 +78,17 @@ NSString *const FBSessionStateChangedNotification = @"com.FacebookVideoUpload.Lo
                                                             error:error];
                                                         }];
 
+}
+
+- (void)reauthorizeSession
+{
+    NSArray *permissions =[NSArray arrayWithObjects:@"publish_actions",@"publish_stream",@"user_videos", nil];
+    
+    [[FBSession activeSession] reauthorizeWithPublishPermissions:permissions defaultAudience:FBSessionDefaultAudienceFriends
+                                               completionHandler:^(FBSession *session, NSError *error) {
+                                                   NSLog(@"Permissions set");
+                                    
+                                               }];
 }
 
 /*
@@ -95,7 +108,7 @@ NSString *const FBSessionStateChangedNotification = @"com.FacebookVideoUpload.Lo
     NSLog(@"User logged out");
 }
 
-#pragma xcode generated stuff
+#pragma mark - xcode generated stuff
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
@@ -105,6 +118,7 @@ NSString *const FBSessionStateChangedNotification = @"com.FacebookVideoUpload.Lo
     self.window.rootViewController = self.viewController;
     [self.window makeKeyAndVisible];
     
+   // [self openSessionWithAllowLoginUI:YES];
     
     return YES;
 }
