@@ -91,6 +91,11 @@ NSString *const FBSessionStateChangedNotification = @"com.FacebookVideoUpload.Lo
                                                }];
 }
 
+- (BOOL)sessionIsActiveAndOpen
+{
+    return [[FBSession activeSession] isOpen];
+}
+
 /*
  * If we have a valid session at the time of openURL call, we handle
  * Facebook transitions by passing the url argument to handleOpenURL

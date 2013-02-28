@@ -21,6 +21,7 @@ extern NSString *const FBSessionStateChangedNotification;
 - (BOOL)openSessionWithAllowLoginUI:(BOOL)allowLoginUI;
 - (void) closeSession;
 - (void)reauthorizeSession;
+- (BOOL)sessionIsActiveAndOpen;
 
 @end
 
